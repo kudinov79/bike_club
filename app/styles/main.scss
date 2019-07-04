@@ -1,0 +1,120 @@
+// modules
+
+@import "functions";
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/bootstrap-4-grid/scss/grid";
+@import "../../node_modules/swiper/src/swiper";
+
+
+
+
+
+
+
+html {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  line-height: 1.2;
+  font-size: 17px;
+  font-family: $LatoRegular;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 110px;
+  font-family: $LatoBlack;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h2,h3,h4,h5 {
+  font-family: $LatoBold;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+    color: $red;
+  }
+}
+
+%main-btn {
+  background: $red;
+  padding: 15px 25px;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: $LatoBold;
+  font-size: 20px;
+  &:hover {
+    background: #ffffff;
+    color: #000;
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  %main-btn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+// sections
+
+@import "sections/head-section";
+@import "sections/about-section";
+@import "sections/gallery-section";
+@import "sections/info-section";
+@import "sections/reviews-section";
+@import "sections/bike-section";
+@import "sections/blog-section";
+@import "sections/newsletter-section";
+@import "sections/footer";
